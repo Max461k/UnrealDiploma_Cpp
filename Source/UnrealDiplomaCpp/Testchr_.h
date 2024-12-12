@@ -4,28 +4,26 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "PlayerCharakter_Cpp.generated.h"
+#include "Testchr_.generated.h"
 
 UCLASS()
-class UNREALDIPLOMACPP_API APlayerCharakter_Cpp : public ACharacter
+class UNREALDIPLOMACPP_API ATestchr_ : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	APlayerCharakter_Cpp(); //Constructer
+	ATestchr_();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:
-	UPROPERTY(BlueprintReadWrite)
-	int PlayerHealth{};
-
-
-	
-	// Called every frame
+public:	
+	UPROPERTY(BlueprintReadWrite,Category = Testchr)
+    int testchrnumber{};
+   
+// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input

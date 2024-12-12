@@ -1,15 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "PlayerCharakter_Cpp.h"
-
-#include <iostream>
-#include <ostream>
-
-#include "DynamicMesh/DynamicMesh3.h"
+#include "Testchr_.h"
 
 // Sets default values
-APlayerCharakter_Cpp::APlayerCharakter_Cpp()
+ATestchr_::ATestchr_()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -17,27 +12,21 @@ APlayerCharakter_Cpp::APlayerCharakter_Cpp()
 }
 
 // Called when the game starts or when spawned
-void APlayerCharakter_Cpp::BeginPlay()
+void ATestchr_::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-/*void APlayerCharakter_Cpp::PrintMyMassage()
-{         
-  GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, "Hello World!");
-}
-*/
-
 // Called every frame
-void APlayerCharakter_Cpp::Tick(float DeltaTime)
+void ATestchr_::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
- 
-} 
+
+}
 
 // Called to bind functionality to input
-void APlayerCharakter_Cpp::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ATestchr_::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
